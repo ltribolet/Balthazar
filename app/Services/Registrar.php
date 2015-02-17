@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace Balthazar\Services;
 
-use App\User;
+use Balthazar\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

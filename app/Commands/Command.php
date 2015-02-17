@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace Balthazar\Commands;
 
 abstract class Command {
 
