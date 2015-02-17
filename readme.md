@@ -6,7 +6,7 @@ First you need to install npm that is included in the NodeJS installer : [http:/
 
 If not already done you should have PHP installed on your system.
 
-Be sure as well to have pdo_sqlite activated (in php.ini) and mcrypt.
+Be sure as well to have pdo_sqlite activated and mcrypt (in php.ini).
 
 You'll need Composer as well : [http://getcomposer.org] 
 
@@ -20,11 +20,11 @@ Then run those commands :
     $ npm install
     $ bower install
 
-Finally to get the assets populated
+Finally to get the assets populated :
 
     $ gulp
 
-or
+Or if you want to work on it and have your modifications in the assets being updated :
 
     $ gulp watch
 
