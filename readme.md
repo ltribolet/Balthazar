@@ -28,6 +28,9 @@ Or if you want to work on it and have your modifications in the assets being upd
 
     $ gulp watch
 
+Also, to setup database, copy the file  in **/storage/database/balthazar.sqlite.example** and rename it to **balthazar.sqlite**.
+
+
 ## Running
 
 Before doing anything, you'll have to setup the database with :

@@ -6,3 +6,5 @@
 /public/css/all.css
 /public/fonts/glyph*
 .idea
+/storage/database/*
+!/storage/database/balthazar.sqlite.example
