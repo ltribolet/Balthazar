@@ -13,12 +13,17 @@ class HomeController extends Controller {
 	|
 	*/
 
+	public function index()
+	{
+		return view('index');
+	}
+
 	/**
 	 * Show the application dashboard to the user.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function home()
 	{
 		return view('home');
 	}
