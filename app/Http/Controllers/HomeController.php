@@ -1,5 +1,8 @@
 <?php namespace Balthazar\Http\Controllers;
 
+use Balthazar\Models\Account;
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller {
 
 	/*
@@ -25,7 +28,9 @@ class HomeController extends Controller {
 	 */
 	public function home()
 	{
-		return view('home');
+		$accounts = \Balthazar\Models\User::find(Auth::user()->iduser)->accounts()->get();
+
+		return view('home', ['accounts' => $accounts]);
 	}
 
 }

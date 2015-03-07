@@ -1,4 +1,6 @@
-<?php namespace Balthazar;
+<?php
+
+namespace Balthazar\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -33,4 +35,19 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	protected $primaryKey = 'iduser';
 
+	/**
+	 * @return \Illuminate\Database\Eloquent\Relations\HasMany
+	 */
+	public function accounts()
+	{
+		return $this->hasMany('Balthazar\Models\Account', 'iduser', 'iduser');
+	}
+
+	/**
+	 * @return \Illuminate\Database\Eloquent\Relations\HasMany
+	 */
+	public function categories()
+	{
+		return $this->hasMany('Balthazar\Models\Cateogry', 'iduser', 'iduser');
+	}
 }

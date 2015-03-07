@@ -13,7 +13,8 @@
 	},
 	"autoload": {
 		"classmap": [
-			"database"
+			"database",
+			"app/models"
 		],
 		"psr-4": {
 			"Balthazar\\": "app/"
